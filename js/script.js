@@ -17,10 +17,9 @@ futureValue = investment;
 for (i = 1; i <= years; i += 1) {
     futureValue = futureValue + (futureValue * rate / 100);
 }
-futureValue = parseInt(futureValue, 10);
 
 //DISPLAY RESULT
 window.document.write("Investment amount: $" + investment + "<br>");
 window.document.write("Interest rate: " + rate + "%<br>");
 window.document.write("Years: " + years + "<br>");
-window.document.write("Future value: $" + futureValue);
+window.document.write("Future value: $" + parseInt(futureValue, 10));
